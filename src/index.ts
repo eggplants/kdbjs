@@ -1,9 +1,9 @@
 import parseKDB, { Course, downloadKDB } from 'twinte-parser'
-import fs from 'fs'
-import path from 'path'
+import * as fs from 'fs'
+import * as path from 'path'
 
 const generate = async (savePath: string, year: number): Promise<void> => {
-  console.warn(`[+]save: '${savePath}', year: ${number}`)
+  console.warn(`[+]save: '${savePath}', year: ${year}`)
   console.warn("[+]downloading...")
   const xlsx = await downloadKDB(year);
   console.warn("[+]writing file...")
