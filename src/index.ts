@@ -28,9 +28,10 @@ class Args {
 }
 
 
+
 const args: Args = {
   savePath: process.argv[2] ?? "./kdbdata.json",
-  fetchYear: +process.argv[3] ?? getFicalYear(),
+  fetchYear: (+process.argv[3]) || getFicalYear(),
 }
 
 generate(args.savePath, args.fetchYear);
