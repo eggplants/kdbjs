@@ -26,7 +26,7 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
-    "twinte-parser": "^2.2.0"
+    "twinte-parser": "^2.3.0"
   },
   "bin": {
     "kdbjs": "./bin/kdbjs.js"
